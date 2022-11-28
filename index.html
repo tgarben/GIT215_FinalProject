@@ -4,40 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wok Asian Cuisine</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Wok Asian Cuisine</h1>
+    <header>
+        <h1>Wok Asian Cuisine</h1>
+    </header>
 
     <nav>
-        <a>Home</a>
-        <a>Our Menu</a>
-        <a>Order Now</a>
-        <a>Contact Us</a>
+        <a><b>Home</b></a>
+        <a href="#">Our Menu</a>
+        <a href="#">Order Now</a>
+        <a href="contact.html">Contact Us</a>
     </nav>
+
     <main>
-        <img src="assets/header-img.png" alt="">
-        <h2>Modern Fusion Bar and Kitchen</h2>
-        <a>Our Menu</a>
-
-        <h3>Cater With Us</h3>
-        <p>We cater weddings, business lunches, dinners, and more.<br>Call us to discuss how we can be a part of your next event.</p>
-
-        <section>
-            <img src="assets/local.jpg" alt="">
-            <h3>Local Cuisine</h3>
-            <p>We cater weddings, business lunches, dinners, and more.<br>Call us to discuss how we can be a part of your next event.</p>
+        <div class="parallax"></div>
+        <section id="heroSection">
+            <h2>Modern Fusion Bar and Kitchen</h2>
+            <a>Our Menu</a>
         </section>
-        <section>
-            <img src="assets/chef.jpg" alt="">
-            <h3>Chef Ly</h3>
+
+        <section id="contentSection">
+            <h3>Cater With Us</h3>
             <p>We cater weddings, business lunches, dinners, and more.<br>Call us to discuss how we can be a part of your next event.</p>
+
+            <div class="grid-container">
+                <section class="grid-left">
+                    <img id="localImage" src="assets/local.jpg" alt="">
+                    <div id="captionDiv">
+                        <h3>Local Cuisine</h3>
+                        <p>We refuse to compromise on quality. Our fresh ingredients are local and we are committed to serving fresh cuisine.</p>
+                    </div>
+                </section>
+                <section class="grid-right">
+                    <img id="chefImage" src="assets/chef.jpg" alt="">
+                    <div id="captionDiv">
+                        <h3>Chef Ly</h3>
+                        <p>With 20 years of experience cooking in the finest restaurants, Chef Ly is committed to serving fresh food and unique experiences.</p>
+                    </div>
+                </section>
+            </div>
         </section>
     </main>
 
     <footer>
-        Wok Asian Cuisine 
-        Copyright © 2022 Wok - All Rights Reserved. 
-        This site is for educational purposes only.
+        <p>Wok Asian Cuisine</p>
+        <p>Copyright © 2022 Wok - All Rights Reserved.</p> 
+        <p>This site is for educational purposes only.</p>
     </footer>
     
 </body>
