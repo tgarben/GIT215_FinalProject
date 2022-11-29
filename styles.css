@@ -6,20 +6,21 @@ header, footer{
 body{
     width:1280px;
     margin: 0 auto;
-    background-color: beige;
+    background-color: #EDE0D4;
 }
 main{
     margin-bottom: 20px;
 }
 
 #contentSection{
-    background-color: brown;
+    background-color: #E6CCB2;
     border-radius: 15px;
 }
 
 p{
     max-width: 60ch;
     margin: 16px auto;
+    text-align: center;
 }
 
 h2,h3{
@@ -51,25 +52,22 @@ h2{
 }
 
 #heroSection{
-    background-color: rgba( 117, 117, 117, 0.8);
-    margin-top: -105px;
-    padding-bottom: 10px;
+    background-color: rgba( 230, 204, 178, 0.8);
+    margin-top: -113px;
+    padding-bottom: 18px;
     margin-bottom: 20px;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
     text-align: center;
 }
 
-#chefImage { 
+#chefImage, #localImage{ 
     width: 500px; 
     height: auto; 
-    border-radius: 15px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
 }
-#localImage { 
-    width: 500px; 
-    height: auto;
-    border-radius: 15px;
-}
+
 #headerImage { 
     width: 1280px; 
     height: auto; 
@@ -78,13 +76,13 @@ h2{
 footer{
     font-style: italic;
     text-align: center;
-    background-color: #afaeb4;
+    background-color: #E6CCB2;
     padding-top: 8px;
     padding-bottom: 16px;
     padding-left: 0px;
     padding-right: 0px;
     border-radius: 15px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 .grid-container{
@@ -94,42 +92,52 @@ footer{
     margin: 0 auto;
     padding-top: 3em;
     text-align: center;
-
-    /* background-color: green; */
 }
 
-#captionDiv{
-    background-color: rgb(117, 117, 117);
-    color: white;
-    border-radius: 15px;
+.captionDiv{
+    background-color: #b08968;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
     width: 500px;
     margin: 0 auto;
-    margin-top: 10px;
-    margin-bottom: 15px;
+    margin-top: -5px;
+    margin-bottom: 20px;
     padding-bottom: 1px;
-    padding-top: 1px;
 }
 
 
 nav{
-    /* margin-top: 16px; */
     display: flex;
-    background-color: brown;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
+    background-color: #E6CCB2;
     text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;
 
 }
 
-nav li{
+ul{
+    display: flex;
+    text-decoration: none;
     list-style: none;
-    text-align: center;
+}
 
-    /* margin: 10px; */
-    width:320px;
-    flex-direction: row;
+li{
+    list-style: none;
+    display: flex;
+}
+
+li a{
+    padding: 16px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #141a1a;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: Verdana, Arial, sans-serif;
+    line-height: 1.5;
+    border-radius: 15px;
 }
 
 nav a{
@@ -138,11 +146,208 @@ nav a{
     margin-bottom: 8px;
     margin-left: auto;
     margin-right: auto;
-    background-color: #e0e5de;
     color: #141a1a;
     text-decoration: none;
     font-weight: bold;
     font-family: Verdana, Arial, sans-serif;
     line-height: 1.5;
     border-radius: 15px;
+}
+
+a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #141a1a;
+    padding: 12px;
+}
+
+a:hover{
+    background-color: #b08968;
+    border-radius: 15px;
+}
+
+h1{
+    background-color: #E6CCB2;
+    margin-bottom: 0px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    padding-left: 10px;
+    text-align: center;
+}
+
+
+
+
+#contactPageNav{
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+#contactH2{
+    margin: 0;
+}
+
+#contactSection{
+    background-color: #E6CCB2;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    width: 550px;
+    margin: 0 auto;
+    margin-top: -5px;
+    margin-bottom: 20px;
+    padding-bottom: 1px;
+}
+
+#contactImage{
+    width:550px;
+    height: auto; 
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+
+
+
+
+form{
+	width:334px;
+	margin: 0 auto;
+	background-color: #E6CCB2;
+	padding: 16px;
+	color: #363432;
+	border-radius: 15px;
+}
+
+/* Display Styles for Form Elements */
+/* TO DO */
+input,label,select,textarea{
+	display: block;
+	width:300px;
+}
+
+input#my-submit{
+    width:100%;
+}
+
+/* Label Styles */
+/* TO DO */
+label{
+	margin: 0 0 4px 16px;
+	font-weight: bold;
+}
+
+/* Input/Select Sizing styles */
+/* TO DO */
+input,select,textarea{
+	padding: 10px;
+	font-size: 1rem;
+	margin-bottom: 24px;
+	border-radius: 4px;
+	border: 1px inset #196774;
+}
+
+/* Fieldset Styles */
+/* TO DO */
+fieldset{
+	margin-bottom: 24px;
+	border-radius: 4px;
+	border-color: #363432;
+	display:grid;
+	grid-column: 1fr;
+	gap: 8px 0;
+}
+
+/* Legend Styles */
+/* TO DO */
+legend{
+	font-weight: bold;
+}
+
+/* Fieldset Label Styles */
+/* TO DO */
+fieldset label{
+	margin-left: 0;
+}
+
+/* Submit Button Styles */
+/* TO DO */
+input[type=submit]{
+	background-color: #196774;
+	border: none;
+	color: #ffffff;
+	font-weight: bold;
+	box-shadow: -6px 6px 10px #363432;
+}
+
+/* Styles for Invalid Data in Inputs in the Form */
+/* TO DO */
+input:invalid, select:invalid, textarea:invalid{
+	border: 4px solid #EF6024;
+}
+
+/* Styles for Each Input as it has Focus */
+/* TO DO */
+input:focus, select:focus, textarea:focus{
+	outline: 3px solid #196774;
+}
+
+/* Styles for the Submit Button Focus */
+/* TO DO */
+input[type=submit]:focus{
+	outline: 3px solid #bf6024;
+}
+
+/* Styles for Submit Button Hover */
+/* TO DO */
+input[type=submit]:hover{
+	box-shadow: -3px 3px 5px #363432;
+}
+
+
+/* ----------------------------------------------------- */
+/* Optional Code for Custom Radios - Compare to Your zyBook, I added additional code to make these match my form styles */
+input[type=radio] + label {
+   	cursor: pointer;
+	display: flex;
+	align-items: center;
+}
+
+input[type=radio] {
+   	appearance: none;
+   	margin: 0;
+	padding: 0;
+	border: none;
+	font-size: 0;
+	border-radius: 0;
+}
+
+input[type=radio] + label::before {
+   	content: "\00a0";   /* Non-breaking space */
+	font-size: 2.25em;
+	line-height: 0.65;
+   	border-radius: 50%;
+   	display: inline-block;  
+   	height: 20px;
+   	width: 22px;
+   	text-align: center;
+   	margin-right: 16px;
+   	border: 2px solid white;   /* Push focus shadow away */
+   	background-color: #fff;
+	padding-bottom: 2px;
+}
+
+input[type=radio]:checked + label::before {
+   	content: "\2022";
+   	color: #fff;
+   	background: #196774;
+}
+
+input[type=radio]:focus{
+	outline: none;
+}
+
+input[type=radio]:focus + label::before {
+   	box-shadow: 0 0 0 2px #196774;
 }
